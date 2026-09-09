@@ -1,0 +1,334 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Catálogo de Arroz</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="slider.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+}
+
+/* ========= MENÚ ========= */
+
+header{
+    background:#2e7d32;
+}
+
+.nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    position:relative;
+}
+
+.btn-menu{
+    display:none;
+    background:none;
+    border:none;
+    color:#fff;
+    font-size:32px;
+    cursor:pointer;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+.menu li a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.menu li a:hover{
+    color:#ffd54f;
+}
+
+/* ========= CATÁLOGOS ========= */
+
+.catalogos{
+    width:95%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+.catalogo{
+    background:#fff;
+    padding:25px;
+    margin-bottom:40px;
+    border-radius:12px;
+    box-shadow:0 3px 12px rgba(0,0,0,0.10);
+    text-align:center;
+}
+
+.catalogo h2{
+    color:#2e7d32;
+    margin-bottom:20px;
+    font-size:30px;
+}
+
+.catalogo iframe{
+    width:100%;
+    height:700px;
+    border:2px solid #ddd;
+    border-radius:10px;
+}
+
+.btn-descargar{
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 28px;
+    background:#2e7d32;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-descargar:hover{
+    background:#1b5e20;
+}
+
+/* ========= FOOTER ========= */
+
+footer{
+    margin-top:40px;
+    background:#2e7d32;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+/* ========= RESPONSIVE ========= */
+
+@media screen and (max-width:768px){
+
+    .btn-menu{
+        display:block;
+    }
+
+    .menu{
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#2e7d32;
+        text-align:center;
+        padding:15px 0;
+        z-index:1000;
+    }
+
+    .menu.active{
+        display:flex;
+    }
+
+    .menu li{
+        margin:12px 0;
+    }
+
+    .menu li a{
+        display:block;
+        font-size:18px;
+    }
+
+    .catalogos{
+        width:96%;
+    }
+
+    .catalogo{
+        padding:15px;
+    }
+
+    .catalogo h2{
+        font-size:24px;
+    }
+
+    .catalogo iframe{
+        height:500px;
+    }
+
+    .btn-descargar{
+        width:90%;
+        max-width:320px;
+        font-size:17px;
+    }
+}
+
+@media screen and (max-width:480px){
+
+    .catalogo h2{
+        font-size:22px;
+    }
+
+    .catalogo iframe{
+        height:350px;
+    }
+
+    .btn-descargar{
+        width:95%;
+        font-size:16px;
+        padding:12px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="nav">
+
+<button class="btn-menu" id="btn-menu">☰</button>
+
+<ul class="menu" id="menu">
+
+<li><a href="index.html">Inicio</a></li>
+
+<li><a href="servicios.html">Nuestros Productos</a></li>
+
+<li><a href="Informacion.html">Información Empresarial</a></li>
+
+<li><a href="producto.html">Realiza tu Pedido de Arroz Aquí</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+<!-- ========= CATÁLOGOS ========= -->
+
+<section class="catalogos">
+
+
+<!-- CATÁLOGO 1 -->
+
+<div class="catalogo">
+
+<h2>📘 Catálogo de Productos</h2>
+
+<iframe
+src="./pdf/catalago.pdf"
+title="Catálogo de Productos">
+</iframe>
+
+<br>
+
+<a
+href="./pdf/catalago.pdf"
+download
+class="btn-descargar">
+
+📄 Descargar Catálogo de Productos
+
+</a>
+
+</div>
+
+
+<!-- CATÁLOGO 2 -->
+
+<div class="catalogo  ">
+
+<h2>📗 Catálogo de Precios</ 2>
+
+<iframe
+src="./pdf/catMac.pdf"
+title="Catálogo de Productos">
+  title="Catálogo de Precios">
+</iframe>
+
+<br>
+
+<a
+href="./pdf/catMac.pdf"
+download
+class="btn-descargar">
+
+📄 Descargar Catálogo de Precios
+
+</a>
+
+</div>
+
+
+</section>
+
+
+<footer>
+
+<p>&copy; 2027 Negocio. Todos los derechos reservados.</p>
+
+</footer>
+
+
+<script>
+
+const btnMenu = document.getElementById("btn-menu");
+const menu = document.getElementById("menu");
+
+btnMenu.addEventListener("click", function(){
+
+    menu.classList.toggle("active");
+
+});
+
+
+const enlaces = document.querySelectorAll(".menu a");
+
+enlaces.forEach(function(enlace){
+
+    enlace.addEventListener("click", function(){
+
+        menu.classList.remove("active");
+
+    });
+
+});
+
+
+window.addEventListener("resize", function(){
+
+    if(window.innerWidth > 768){
+
+        menu.classList.remove("active");
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galería de Imágenes</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+.galeria{
+    width:95%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+.galeria h2{
+    text-align:center;
+    color:#006400;
+    margin-bottom:25px;
+    font-size:35px;
+}
+
+.contenedor{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.contenedor img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.4s;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.contenedor img:hover{
+    transform:scale(1.05);
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+}
+
+</style>
+
+</head>
+<body>
+
+<section class="galeria">
+
+<h2>Galería de Imágenes</h2>
+
+<div class="contenedor">
+
+<img src="im/a.jpeg" alt="Imagen 1">
+<img src="im/b.jpeg" alt="Imagen 2">
+<img src="im/c.jpeg" alt="Imagen 3">
+<img src="im/d.jpeg" alt="Imagen 4">
+<img src="im/e.jpeg" alt="Imagen 5">
+<img src="im/f.jpeg" alt="Imagen 6">
+<img src="im/g.jpeg" alt="Imagen 7">
+<img src="im/h.jpeg" alt="Imagen 8">
+
+</div>
+
+</section>
+
+</body>
+</html>

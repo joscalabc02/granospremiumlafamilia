@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="slider.css">
+    <title>Producto</title>
+    <style>
+/* NAV */
+.nav {
+    background: #2c3e50;
+    padding: 10px;
+}
+
+/* MENÚ */
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 5px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+/* BOTÓN */
+.btn-menu {
+    display: none;
+    font-size: 25px;
+    background: none;
+    border: none;
+    color: white;
+}
+
+/* CELULAR */
+@media (max-width: 768px) {
+
+    .btn-menu {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background: #34495e;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+       
+        <nav class="nav">
+    <button class="btn-menu" id="btn-menu">☰</button>
+
+    <ul class="menu" id="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Nuestros Productos</a></li>
+         
+        <li><a href="Informacion.html">Informacion Empresarial</a></li>
+        <li><a href="producto.html">Realiza tu Pedido de Arroz Aquí</a></li>
+        
+    </ul>
+</nav>
+    </header>
+   
+<title>Formulario de Pedido</title>
+
+<style>
+
+body{
+    margin:0;
+    background:#f4f4f4;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.contenedor{
+    max-width:1000px;
+    margin:40px auto;
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.producto{
+    flex:1;
+    min-width:320px;
+    background:#fff;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    text-align:center;
+}
+
+.producto img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.producto h2{
+    color:#333;
+    margin:15px 0;
+}
+
+.precio{
+    color:#2e8b57;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.formulario{
+    flex:1;
+    min-width:320px;
+    background:#fff;
+    border-radius:12px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.formulario h2{
+    margin-bottom:20px;
+}
+
+.formulario label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+.formulario input,
+.formulario textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+.formulario textarea{
+    resize:none;
+}
+
+button{
+    width:100%;
+    margin-top:25px;
+    padding:15px;
+    background:#25D366;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1ebd5a;
+}
+
+</style>
+</head>
+
+<body>
+
+
+    <!-- CÓDIGO MACAREÑO VERDE-->
+
+<div class="contenedor">
+
+    <div class="producto">
+
+        <img src="img/maca2v.jpeg" alt="Arroz Macareño Premium">
+
+        <h2>Arroz Macareño Premium</h2>
+        <!-- Características Técnicas y Comerciales -->
+        <ul class="features-list">
+          <li>
+            <span class="icon-check">✓</span>
+            <div>
+              <strong>Grano Seleccionado Premium:</strong> Proceso de pilado y limpia de alta precisión que minimiza el porcentaje de grano partido, garantizando una cocción uniforme.
+            </div>
+          </li>
+          <li>
+            <span class="icon-check">✓</span>
+            <div>
+              <strong>Textura Graneada e Insuperable:</strong> Excelente absorción de humedad sin perder consistencia, ideal para platos principales y acompañamientos profesionales.
+            </div>
+          </li>
+          <li>
+            <span class="icon-check">✓</span>
+            <div>
+              <strong>Optimización de Margen (HORECA):</strong> Diseñado para restaurantes, comedores e industria de alimentos que requieren máximo rinde por porción servida.
+            </div>
+          </li>
+          <li>
+            <span class="icon-check">✓</span>
+            <div>
+              <strong>Empaque de Alta Durabilidad:</strong> Saco tejido de polipropileno de alta resistencia que protege el producto contra la humedad y el desgaste durante el transporte y almacenamiento.
+            </div>
+          </li>
+        </ul>
+
+      <!-- Columna Lateral / Argumentos de Venta -->
+      <aside class="sidebar">
+        
+        <div class="sidebar-box">
+          <h4>Segmento Objetivo</h4>
+          <p>Ideal para distribuidores mayoristas, tiendas de abarrotes, hoteles, restaurantes y catering institucional.</p>
+        </div>
+
+        <div class="sidebar-box">
+          <h4>Garantía de Frescura</h4>
+          <p>Conserva el sabor neutro y aroma original del arroz recién cosechado, permitiendo adaptarse a cualquier especialidad gastronómica.</p>
+        </div>
+
+      </aside>
+
+    </div>
+
+    <div class="formulario">
+
+        <h2>Datos del Cliente</h2>
+
+        <form id="formMacareno" onsubmit="enviarWhatsappMacareno(); return false;">
+
+            <label>Nombre</label>
+            <input type="text" id="nombreMacareno" required>
+
+            <label>Teléfono</label>
+            <input type="text" id="telefonoMacareno" required>
+
+            <label>Dirección</label>
+            <input type="text" id="direccionMacareno" required>
+
+            <label>Presentación</label>
+            <select id="presentacionMacareno" required>
+                <option value="quintal">Quintal 100 lb - $55</option>
+                <option value="medio_quintal">Medio quintal 50 lb - $28</option>
+                <option value="arroba">Arroba 25 lb - $14</option>
+            </select>
+
+            <label>Cantidad</label>
+            <input type="number" id="cantidadMacareno" min="1" value="1" required>
+
+            <label>Observaciones</label>
+            <textarea id="obsMacareno" rows="4"></textarea>
+
+            <button type="submit">
+                📲 Realizar Pedido por WhatsApp
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script>
+function enviarWhatsappMacareno(){
+
+    let numero = "593982727488";
+    let presentacion = document.getElementById("presentacionMacareno").value;
+    let cantidad = parseInt(document.getElementById("cantidadMacareno").value) || 0;
+
+    // Tabla de Precios y Etiquetas
+    let precios = {
+        "quintal": { precio: 55, etiqueta: "Quintal(es) [100 lb]" },
+        "medio_quintal": { precio: 28, etiqueta: "Medio Quintal(es) [50 lb]" },
+        "arroba": { precio: 14, etiqueta: "Arroba(s) [25 lb]" }
+    };
+
+    let seleccion = precios[presentacion] || precios["quintal"];
+    let precioUnitario = seleccion.precio;
+    let etiquetaPresentacion = seleccion.etiqueta;
+    let total = cantidad * precioUnitario;
+
+    let mensaje =
+`🛒 *NUEVO PEDIDO - ARROZ MACAREÑO*
+
+👤 Cliente: ${document.getElementById("nombreMacareno").value}
+📞 Teléfono: ${document.getElementById("telefonoMacareno").value}
+📍 Dirección: ${document.getElementById("direccionMacareno").value}
+
+🌾 Producto: Arroz Macareño Premium
+📦 Presentación: ${etiquetaPresentacion}
+🔢 Cantidad: ${cantidad}
+💵 Precio unitario: $${precioUnitario}
+💰 Total a pagar: $${total}
+
+📝 Observaciones:
+${document.getElementById("obsMacareno").value || "Sin observaciones"}`;
+
+    let url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensaje);
+
+    window.open(url, "_blank");
+
+    // Limpiar formulario
+    document.getElementById("formMacareno").reset();
+
+    return false;
+}
+</script>
+
+
+
+<!-- CÓDIGO ARROZ MACAREÑO LA CARMITA -->
+
+<div class="contenedor">
+
+    <div class="producto">
+
+        <img src="im/zz.jpeg" alt="Arroz Macareño La Carmita">
+
+        <h2>Arroz Macareño La Carmita</h2>
+
+        <!-- Características del Producto -->
+        <ul class="features-list">
+
+          <li>
+            <span class="icon-check">✓</span>
+            <div>
+              <strong>Grano Seleccionado:</strong>
+              Arroz cuidadosamente seleccionado para ofrecer una excelente calidad,
+              buena presentación y una cocción uniforme en cada preparación.
+            </div>
+          </li>
+
+          <li>
+            <span class="icon-check">✓</span>
+            <div>
+              <strong>Excelente Rendimiento:</strong>
+              Su buena capacidad de absorción permite obtener un arroz suelto,
+              consistente y de excelente rendimiento después de la cocción.
+            </div>
+          </li>
+
+          <li>
+            <span class="icon-check">✓</span>
+            <div>
+              <strong>Ideal para el Consumo Diario:</strong>
+              Una opción práctica para hogares, restaurantes, comedores,
+              tiendas y negocios que buscan un arroz de buena calidad.
+            </div>
+          </li>
+
+          <li>
+            <span class="icon-check">✓</span>
+            <div>
+              <strong>Excelente Relación Calidad-Precio:</strong>
+              Producto pensado para brindar un buen rendimiento y una alternativa
+              competitiva tanto para ventas al por mayor como al por menor.
+            </div>
+          </li>
+
+          <li>
+            <span class="icon-check">✓</span>
+            <div>
+              <strong>Empaque Resistente:</strong>
+              Presentado en saco de polipropileno resistente, diseñado para
+              facilitar el transporte, almacenamiento y conservación del producto.
+            </div>
+          </li>
+
+          <li>
+            <span class="icon-check">✓</span>
+            <div>
+              <strong>Versátil y Fácil de Preparar:</strong>
+              Ideal para acompañar carnes, pollo, pescado, menestras,
+              sopas y una gran variedad de platos de la gastronomía ecuatoriana.
+            </div>
+          </li>
+
+        </ul>
+
+
+        <!-- Columna Lateral / Argumentos de Venta -->
+        <aside class="sidebar">
+
+            <div class="sidebar-box">
+                <h4>Segmento Objetivo</h4>
+                <p>
+                    Ideal para hogares, tiendas de abarrotes, distribuidores,
+                    restaurantes, hoteles, comedores y negocios de alimentación.
+                </p>
+            </div>
+
+            <div class="sidebar-box">
+                <h4>Calidad y Rendimiento</h4>
+                <p>
+                    Una alternativa confiable para quienes buscan un arroz
+                    de buena calidad, excelente rendimiento y fácil preparación.
+                </p>
+            </div>
+
+            <div class="sidebar-box">
+                <h4>Presentaciones Disponibles</h4>
+                <p>
+                    Disponible en Quintal de 100 lb, Medio Quintal de 50 lb
+                    y Arroba de 25 lb.
+                </p>
+            </div>
+
+        </aside>
+
+    </div>
+
+
+    <!-- FORMULARIO DE PEDIDO -->
+
+    <div class="formulario">
+
+        <h2>Datos del Cliente</h2>
+
+        <form id="formMacarenoCarmita"
+              onsubmit="enviarWhatsappMacarenoCarmita(); return false;">
+
+            <label>Nombre</label>
+
+            <input
+                type="text"
+                id="nombreMacarenoCarmita"
+                placeholder="Ingrese su nombre"
+                required
+            >
+
+
+            <label>Teléfono</label>
+
+            <input
+                type="text"
+                id="telefonoMacarenoCarmita"
+                placeholder="Ingrese su teléfono"
+                required
+            >
+
+
+            <label>Dirección</label>
+
+            <input
+                type="text"
+                id="direccionMacarenoCarmita"
+                placeholder="Ingrese su dirección"
+                required
+            >
+
+
+            <label>Presentación</label>
+
+            <select id="presentacionMacarenoCarmita" required>
+
+                <option value="quintal">
+                    Quintal 100 lb - $55
+                </option>
+
+                <option value="medio_quintal">
+                    Medio quintal 50 lb - $28
+                </option>
+
+                <option value="arroba">
+                    Arroba 25 lb - $14
+                </option>
+
+            </select>
+
+
+            <label>Cantidad</label>
+
+            <input
+                type="number"
+                id="cantidadMacarenoCarmita"
+                min="1"
+                value="1"
+                required
+            >
+
+
+            <label>Observaciones</label>
+
+            <textarea
+                id="obsMacarenoCarmita"
+                rows="4"
+                placeholder="Escriba alguna observación..."
+            ></textarea>
+
+
+            <button type="submit">
+                📲 Realizar Pedido por WhatsApp
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<script>
+
+function enviarWhatsappMacarenoCarmita(){
+
+    // Número de WhatsApp
+    let numero = "593982727488";
+
+
+    // Obtener presentación
+    let presentacion =
+        document.getElementById("presentacionMacarenoCarmita").value;
+
+
+    // Obtener cantidad
+    let cantidad =
+        parseInt(
+            document.getElementById("cantidadMacarenoCarmita").value
+        ) || 0;
+
+
+    // Tabla de precios
+    let precios = {
+
+        "quintal": {
+            precio: 55,
+            etiqueta: "Quintal(es) [100 lb]"
+        },
+
+        "medio_quintal": {
+            precio: 28,
+            etiqueta: "Medio Quintal(es) [50 lb]"
+        },
+
+        "arroba": {
+            precio: 14,
+            etiqueta: "Arroba(s) [25 lb]"
+        }
+
+    };
+
+
+    // Seleccionar precio
+    let seleccion =
+        precios[presentacion] || precios["quintal"];
+
+
+    let precioUnitario = seleccion.precio;
+
+    let etiquetaPresentacion = seleccion.etiqueta;
+
+
+    // Calcular total
+    let total = cantidad * precioUnitario;
+
+
+    // Crear mensaje de WhatsApp
+    let mensaje =
+`🛒 *NUEVO PEDIDO - MACAREÑO LA CARMITA*
+
+👤 Cliente: ${document.getElementById("nombreMacarenoCarmita").value}
+
+📞 Teléfono: ${document.getElementById("telefonoMacarenoCarmita").value}
+
+📍 Dirección: ${document.getElementById("direccionMacarenoCarmita").value}
+
+🌾 *Producto:* Arroz Macareño La Carmita
+
+📦 *Presentación:* ${etiquetaPresentacion}
+
+🔢 *Cantidad:* ${cantidad}
+
+💵 *Precio unitario:* $${precioUnitario.toFixed(2)}
+
+💰 *Total a pagar:* $${total.toFixed(2)}
+
+📝 *Observaciones:*
+${document.getElementById("obsMacarenoCarmita").value || "Sin observaciones"}
+
+━━━━━━━━━━━━━━━━━━
+🌾 *DISTRIBUIDORA GRANOS PREMIUM LA FAMILIA*
+Gracias por su pedido. 🙏`;
+
+
+    // Crear enlace WhatsApp
+    let url =
+        "https://wa.me/" +
+        numero +
+        "?text=" +
+        encodeURIComponent(mensaje);
+
+
+    // Abrir WhatsApp
+    window.open(url, "_blank");
+
+
+    // Limpiar formulario
+    document
+        .getElementById("formMacarenoCarmita")
+        .reset();
+
+
+    return false;
+
+}
+
+</script>
+
+
+<!-- ================================
+     ARROZ OSO 
+================================ -->
+
+<div class="contenedor">
+
+    <!-- PRODUCTO -->
+    <div class="producto">
+
+        <img src="im/oso.jpeg" alt="Arroz Oso ">
+
+
+       <h2>Arroz Oso</h2>
+
+<p class="precio">$46.00</p>
+<p>Grano seleccionado de excelente calidad.</p>
+ <p>
+        Ideal para hogares, restaurantes y negocios que buscan un arroz de
+        calidad premium, con sabor auténtico y excelente presentación.
+   
+
+  </p>
+<p>
+✔ Granos seleccionados<br><br>
+✔ Mayor rendimiento al cocinar<br><br>
+✔ Granos sueltos y consistentes<br><br>
+✔ Excelente sabor y textura<br><br>
+✔ Calidad garantizada
+</p>
+ 
+
+
+
+</div>
+
+
+
+    <!-- FORMULARIO -->
+    <div class="formulario">
+
+        <h2>Datos del Cliente</h2>
+
+        <form id="formOso"
+              onsubmit="enviarWhatsappOso(); return false;">
+
+            <label>Nombre</label>
+
+            <input
+                type="text"
+                id="nombreOso"
+                placeholder="Ingrese su nombre"
+                required
+            >
+
+
+            <label>Teléfono</label>
+
+            <input
+                type="tel"
+                id="telefonoOso"
+                placeholder="Ej: 0999999999"
+                required
+            >
+
+
+            <label>Dirección</label>
+
+            <input
+                type="text"
+                id="direccionOso"
+                placeholder="Ingrese su dirección"
+                required
+            >
+
+
+            <!-- PRESENTACIÓN -->
+            <label>Presentación</label>
+
+            <select id="presentacionOso" required>
+
+                <option value="quintal">
+                    Quintal 100 lb - $46
+                </option>
+
+                <option value="medio_quintal">
+                    Medio quintal 50 lb - $24
+                </option>
+
+                <option value="arroba">
+                    Arroba 25 lb - $13.50
+                </option>
+
+            </select>
+
+
+            <!-- CANTIDAD -->
+            <label>Cantidad</label>
+
+            <input
+                type="number"
+                id="cantidadOso"
+                min="1"
+                value="1"
+                required
+            >
+
+
+            <!-- OBSERVACIONES -->
+            <label>Observaciones</label>
+
+            <textarea
+                id="obsOso"
+                rows="4"
+                placeholder="Ej: entregar en la mañana..."
+            ></textarea>
+
+
+            <!-- BOTÓN -->
+            <button type="submit">
+                📲 Realizar Pedido por WhatsApp
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- ================================
+     JAVASCRIPT
+================================ -->
+
+<script>
+
+function enviarWhatsappOso() {
+
+    // Número de WhatsApp
+    let numero = "593982727488";
+
+
+    // Obtener presentación
+    let presentacion =
+        document.getElementById("presentacionOso").value;
+
+
+    // Obtener cantidad
+    let cantidad =
+        parseInt(
+            document.getElementById("cantidadOso").value
+        ) || 0;
+
+
+    // Tabla de precios
+    let precios = {
+
+        "quintal": {
+            precio: 46,
+            etiqueta: "Quintal(es) [100 lb]"
+        },
+
+        "medio_quintal": {
+            precio: 24,
+            etiqueta: "Medio Quintal(es) [50 lb]"
+        },
+
+        "arroba": {
+            precio: 13.50,
+            etiqueta: "Arroba(s) [25 lb]"
+        }
+
+    };
+
+
+    // Obtener información seleccionada
+    let seleccion =
+        precios[presentacion] || precios["quintal"];
+
+
+    let precioUnitario =
+        seleccion.precio;
+
+
+    let etiquetaPresentacion =
+        seleccion.etiqueta;
+
+
+    // Calcular total
+    let total =
+        cantidad * precioUnitario;
+
+
+    // Datos del cliente
+    let nombre =
+        document.getElementById("nombreOso").value.trim();
+
+
+    let telefono =
+        document.getElementById("telefonoOso").value.trim();
+
+
+    let direccion =
+        document.getElementById("direccionOso").value.trim();
+
+
+    let observaciones =
+        document.getElementById("obsOso").value.trim();
+
+
+    // Mensaje de WhatsApp
+    let mensaje =
+`🛒 *NUEVO PEDIDO - ARROZ OSO*
+
+👤 *Cliente:* ${nombre}
+📞 *Teléfono:* ${telefono}
+📍 *Dirección:* ${direccion}
+
+🌾 *Producto:* Arroz Oso 
+📦 *Presentación:* ${etiquetaPresentacion}
+🔢 *Cantidad:* ${cantidad}
+
+💵 *Precio unitario:* $${precioUnitario.toFixed(2)}
+💰 *Total a pagar:* $${total.toFixed(2)}
+
+📝 *Observaciones:*
+${observaciones || "Sin observaciones"}
+
+¡Gracias por su pedido! 🙌`;
+
+
+    // Crear URL de WhatsApp
+    let url =
+        "https://wa.me/" +
+        numero +
+        "?text=" +
+        encodeURIComponent(mensaje);
+
+
+    // Abrir WhatsApp
+    window.open(url, "_blank");
+
+
+    // Limpiar formulario
+    document.getElementById("formOso").reset();
+
+}
+
+</script>
+   
+
+<!-- CÓDIGO ARROZ FLOR -->
+
+<div class="contenedor">
+
+    <div class="producto">
+
+        <img src="im/s.jpeg" alt="Arroz Flor">
+
+        <h2>Arroz Flor</h2>
+
+        <!-- Características del Producto -->
+        <ul class="features-list">
+
+          <li>
+            <span class="icon-check">✓</span>
+            <div>
+              <strong>Grano Seleccionado:</strong>
+              Granos cuidadosamente seleccionados para ofrecer una excelente
+              presentación, calidad y uniformidad en cada preparación.
+            </div>
+          </li>
+
+          <li>
+            <span class="icon-check">✓</span>
+            <div>
+              <strong>Textura Suelta y Graneada:</strong>
+              Después de la cocción ofrece una textura agradable, suelta y
+              graneada, ideal para quienes disfrutan un arroz con buena
+              consistencia y excelente apariencia.
+            </div>
+          </li>
+
+          <li>
+            <span class="icon-check">✓</span>
+            <div>
+              <strong>Cocción Uniforme:</strong>
+              Diseñado para lograr una cocción uniforme, facilitando la
+              preparación de deliciosos platos para el consumo diario.
+            </div>
+          </li>
+
+          <li>
+            <span class="icon-check">✓</span>
+            <div>
+              <strong>Excelente Rendimiento:</strong>
+              Su buen rendimiento después de la cocción lo convierte en una
+              alternativa ideal para hogares, restaurantes, comedores y
+              negocios de alimentación.
+            </div>
+          </li>
+
+          <li>
+            <span class="icon-check">✓</span>
+            <div>
+              <strong>Sabor y Textura Agradables:</strong>
+              Su textura permite acompañar una gran variedad de preparaciones
+              como carnes, pollo, pescado, menestras, guisos y platos
+              tradicionales de la gastronomía ecuatoriana.
+            </div>
+          </li>
+
+          <li>
+            <span class="icon-check">✓</span>
+            <div>
+              <strong>Empaque Resistente:</strong>
+              Presentado en un empaque resistente que facilita su transporte,
+              almacenamiento y conservación.
+            </div>
+          </li>
+
+        </ul>
+
+
+        <!-- Columna Lateral / Argumentos de Venta -->
+        <aside class="sidebar">
+
+            <div class="sidebar-box">
+                <h4>Textura</h4>
+                <p>
+                    Una vez preparado, ofrece una textura suelta, agradable
+                    y graneada, ideal para acompañar diferentes tipos de
+                    comidas.
+                </p>
+            </div>
+
+            <div class="sidebar-box">
+                <h4>Ideal para Negocios</h4>
+                <p>
+                    Recomendado para restaurantes, hoteles, comedores,
+                    tiendas de abarrotes, distribuidores y negocios de
+                    alimentación.
+                </p>
+            </div>
+
+            <div class="sidebar-box">
+                <h4>Presentaciones Disponibles</h4>
+                <p>
+                    Disponible en Quintal de 100 lb, Medio Quintal de 50 lb
+                    y Arroba de 25 lb.
+                </p>
+            </div>
+
+        </aside>
+
+    </div>
+
+
+    <!-- FORMULARIO DE PEDIDO -->
+
+    <div class="formulario">
+
+        <h2>Datos del Cliente</h2>
+
+        <form id="formArrozFlor"
+              onsubmit="enviarWhatsappArrozFlor(); return false;">
+
+            <label>Nombre</label>
+
+            <input
+                type="text"
+                id="nombreArrozFlor"
+                placeholder="Ingrese su nombre"
+                required
+            >
+
+
+            <label>Teléfono</label>
+
+            <input
+                type="text"
+                id="telefonoArrozFlor"
+                placeholder="Ingrese su teléfono"
+                required
+            >
+
+
+            <label>Dirección</label>
+
+            <input
+                type="text"
+                id="direccionArrozFlor"
+                placeholder="Ingrese su dirección"
+                required
+            >
+
+
+            <label>Presentación</label>
+
+            <select id="presentacionArrozFlor" required>
+
+                <option value="quintal">
+                    Quintal 100 lb - $55
+                </option>
+
+                <option value="medio_quintal">
+                    Medio quintal 50 lb - $28
+                </option>
+
+                <option value="arroba">
+                    Arroba 25 lb - $14
+                </option>
+
+            </select>
+
+
+            <label>Cantidad</label>
+
+            <input
+                type="number"
+                id="cantidadArrozFlor"
+                min="1"
+                value="1"
+                required
+            >
+
+
+            <label>Observaciones</label>
+
+            <textarea
+                id="obsArrozFlor"
+                rows="4"
+                placeholder="Escriba alguna observación..."
+            ></textarea>
+
+
+            <button type="submit">
+                📲 Realizar Pedido por WhatsApp
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<script>
+
+function enviarWhatsappArrozFlor(){
+
+    // Número de WhatsApp
+    let numero = "593982727488";
+
+
+    // Obtener presentación
+    let presentacion =
+        document.getElementById("presentacionArrozFlor").value;
+
+
+    // Obtener cantidad
+    let cantidad =
+        parseInt(
+            document.getElementById("cantidadArrozFlor").value
+        ) || 0;
+
+
+    // Tabla de precios
+    let precios = {
+
+        "quintal": {
+            precio: 55,
+            etiqueta: "Quintal(es) [100 lb]"
+        },
+
+        "medio_quintal": {
+            precio: 28,
+            etiqueta: "Medio Quintal(es) [50 lb]"
+        },
+
+        "arroba": {
+            precio: 14,
+            etiqueta: "Arroba(s) [25 lb]"
+        }
+
+    };
+
+
+    // Seleccionar precio
+    let seleccion =
+        precios[presentacion] || precios["quintal"];
+
+
+    let precioUnitario = seleccion.precio;
+
+    let etiquetaPresentacion = seleccion.etiqueta;
+
+
+    // Calcular total
+    let total = cantidad * precioUnitario;
+
+
+    // Crear mensaje de WhatsApp
+    let mensaje =
+`🛒 *NUEVO PEDIDO - ARROZ FLOR*
+
+👤 Cliente: ${document.getElementById("nombreArrozFlor").value}
+
+📞 Teléfono: ${document.getElementById("telefonoArrozFlor").value}
+
+📍 Dirección: ${document.getElementById("direccionArrozFlor").value}
+
+🌾 *Producto:* Arroz Flor
+
+📦 *Presentación:* ${etiquetaPresentacion}
+
+🔢 *Cantidad:* ${cantidad}
+
+💵 *Precio unitario:* $${precioUnitario.toFixed(2)}
+
+💰 *Total a pagar:* $${total.toFixed(2)}
+
+✨ *Textura:* Suelta, agradable y graneada.
+
+📝 *Observaciones:*
+${document.getElementById("obsArrozFlor").value || "Sin observaciones"}
+
+━━━━━━━━━━━━━━━━━━
+🌾 *DISTRIBUIDORA GRANOS PREMIUM LA FAMILIA*
+Gracias por su pedido. 🙏`;
+
+
+    // Crear enlace WhatsApp
+    let url =
+        "https://wa.me/" +
+        numero +
+        "?text=" +
+        encodeURIComponent(mensaje);
+
+
+    // Abrir WhatsApp
+    window.open(url, "_blank");
+
+
+    // Limpiar formulario
+    document
+        .getElementById("formArrozFlor")
+        .reset();
+
+
+    return false;
+
+}
+
+</script>
+
+
+
+<!-- CÓDIGO ARROZ CONEJO -->
+
+<div class="contenedor">
+
+    <div class="producto">
+
+        <img src="im/q.jpeg" alt="Arroz Conejo">
+
+        <h2>Arroz Conejo</h2>
+
+        <!-- Características del Producto -->
+        <ul class="features-list">
+
+          <li>
+            <span class="icon-check">✓</span>
+            <div>
+              <strong>Grano Seleccionado:</strong>
+              Granos cuidadosamente seleccionados para ofrecer una buena
+              presentación, calidad y uniformidad en cada preparación.
+            </div>
+          </li>
+
+          <li>
+            <span class="icon-check">✓</span>
+            <div>
+              <strong>Textura Suelta y Graneada:</strong>
+              Después de la cocción proporciona una textura agradable,
+              suelta y graneada, ideal para disfrutar un arroz con buena
+              consistencia y excelente apariencia.
+            </div>
+          </li>
+
+          <li>
+            <span class="icon-check">✓</span>
+            <div>
+              <strong>Cocción Uniforme:</strong>
+              Permite obtener una cocción uniforme y una preparación
+              práctica para acompañar una gran variedad de comidas.
+            </div>
+          </li>
+
+          <li>
+            <span class="icon-check">✓</span>
+            <div>
+              <strong>Buen Rendimiento:</strong>
+              Ofrece un buen rendimiento después de la cocción, convirtiéndolo
+              en una alternativa ideal para hogares, restaurantes, comedores
+              y negocios de alimentación.
+            </div>
+          </li>
+
+          <li>
+            <span class="icon-check">✓</span>
+            <div>
+              <strong>Sabor y Textura Agradables:</strong>
+              Ideal para acompañar carnes, pollo, pescado, menestras,
+              guisos, sopas y diferentes platos de la gastronomía ecuatoriana.
+            </div>
+          </li>
+
+          <li>
+            <span class="icon-check">✓</span>
+            <div>
+              <strong>Empaque Resistente:</strong>
+              Presentado en un empaque resistente que facilita su transporte,
+              almacenamiento y conservación del producto.
+            </div>
+          </li>
+
+        </ul>
+
+
+        <!-- Columna Lateral / Argumentos de Venta -->
+        <aside class="sidebar">
+
+            <div class="sidebar-box">
+                <h4>Textura</h4>
+                <p>
+                    Una vez preparado, ofrece una textura suelta, agradable
+                    y graneada, ideal para acompañar diferentes tipos de
+                    comidas.
+                </p>
+            </div>
+
+            <div class="sidebar-box">
+                <h4>Ideal para el Hogar y Negocios</h4>
+                <p>
+                    Recomendado para hogares, restaurantes, hoteles,
+                    comedores, tiendas de abarrotes, distribuidores y
+                    negocios de alimentación.
+                </p>
+            </div>
+
+            <div class="sidebar-box">
+                <h4>Presentaciones Disponibles</h4>
+                <p>
+                    Disponible en Quintal de 100 lb, Medio Quintal de 50 lb
+                    y Arroba de 25 lb.
+                </p>
+            </div>
+
+        </aside>
+
+    </div>
+
+
+    <!-- FORMULARIO DE PEDIDO -->
+
+    <div class="formulario">
+
+        <h2>Datos del Cliente</h2>
+
+        <form id="formArrozConejo"
+              onsubmit="enviarWhatsappArrozConejo(); return false;">
+
+            <label>Nombre</label>
+
+            <input
+                type="text"
+                id="nombreArrozConejo"
+                placeholder="Ingrese su nombre"
+                required
+            >
+
+
+            <label>Teléfono</label>
+
+            <input
+                type="text"
+                id="telefonoArrozConejo"
+                placeholder="Ingrese su teléfono"
+                required
+            >
+
+
+            <label>Dirección</label>
+
+            <input
+                type="text"
+                id="direccionArrozConejo"
+                placeholder="Ingrese su dirección"
+                required
+            >
+
+
+            <label>Presentación</label>
+
+            <select id="presentacionArrozConejo" required>
+
+                <option value="quintal">
+                    Quintal 100 lb - $55
+                </option>
+
+                <option value="medio_quintal">
+                    Medio quintal 50 lb - $28
+                </option>
+
+                <option value="arroba">
+                    Arroba 25 lb - $14
+                </option>
+
+            </select>
+
+
+            <label>Cantidad</label>
+
+            <input
+                type="number"
+                id="cantidadArrozConejo"
+                min="1"
+                value="1"
+                required
+            >
+
+
+            <label>Observaciones</label>
+
+            <textarea
+                id="obsArrozConejo"
+                rows="4"
+                placeholder="Escriba alguna observación..."
+            ></textarea>
+
+
+            <button type="submit">
+                📲 Realizar Pedido por WhatsApp
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<script>
+
+function enviarWhatsappArrozConejo(){
+
+    // Número de WhatsApp
+    let numero = "593982727488";
+
+
+    // Obtener presentación
+    let presentacion =
+        document.getElementById("presentacionArrozConejo").value;
+
+
+    // Obtener cantidad
+    let cantidad =
+        parseInt(
+            document.getElementById("cantidadArrozConejo").value
+        ) || 0;
+
+
+    // Tabla de precios
+    let precios = {
+
+        "quintal": {
+            precio: 55,
+            etiqueta: "Quintal(es) [100 lb]"
+        },
+
+        "medio_quintal": {
+            precio: 28,
+            etiqueta: "Medio Quintal(es) [50 lb]"
+        },
+
+        "arroba": {
+            precio: 14,
+            etiqueta: "Arroba(s) [25 lb]"
+        }
+
+    };
+
+
+    // Seleccionar precio
+    let seleccion =
+        precios[presentacion] || precios["quintal"];
+
+
+    let precioUnitario = seleccion.precio;
+
+    let etiquetaPresentacion = seleccion.etiqueta;
+
+
+    // Calcular total
+    let total = cantidad * precioUnitario;
+
+
+    // Crear mensaje de WhatsApp
+    let mensaje =
+`🛒 *NUEVO PEDIDO - ARROZ CONEJO*
+
+👤 Cliente: ${document.getElementById("nombreArrozConejo").value}
+
+📞 Teléfono: ${document.getElementById("telefonoArrozConejo").value}
+
+📍 Dirección: ${document.getElementById("direccionArrozConejo").value}
+
+🌾 *Producto:* Arroz Conejo
+
+📦 *Presentación:* ${etiquetaPresentacion}
+
+🔢 *Cantidad:* ${cantidad}
+
+💵 *Precio unitario:* $${precioUnitario.toFixed(2)}
+
+💰 *Total a pagar:* $${total.toFixed(2)}
+
+✨ *Textura:* Suelta, agradable y graneada.
+
+🔥 *Características:* Grano seleccionado, buena cocción y excelente rendimiento.
+
+📝 *Observaciones:*
+${document.getElementById("obsArrozConejo").value || "Sin observaciones"}
+
+━━━━━━━━━━━━━━━━━━
+🌾 *DISTRIBUIDORA GRANOS PREMIUM LA FAMILIA*
+Gracias por su pedido. 🙏`;
+
+
+    // Crear enlace WhatsApp
+    let url =
+        "https://wa.me/" +
+        numero +
+        "?text=" +
+        encodeURIComponent(mensaje);
+
+
+    // Abrir WhatsApp
+    window.open(url, "_blank");
+
+
+    // Limpiar formulario
+    document
+        .getElementById("formArrozConejo")
+        .reset();
+
+
+    return false;
+
+}
+
+</script>
+
+</body>
+ <footer>
+        <p>&copy; 2027 Negocio. Todos los derechos reservados.</p>
+    </footer>
+     <script>
+document.getElementById("btn-menu").addEventListener("click", function() {
+    document.getElementById("menu").classList.toggle("active");
+});
+</script>
+</html>
